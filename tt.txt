@@ -1,0 +1,70 @@
+get one student profile:
+    path('student/<uuid:id>/', view=studentView.studentID),
+    127.0.0.1:8000/api/student/<uuid:id>/
+
+get student subjects:
+    path('studentsubject/', view=studentView.studentsubject),
+    127.0.0.1:8000/api/studentsubject/
+
+get one studen subject:			done
+    path('studentsubject/<uuid:id>/', view=studentView.studentsubjectID),
+    127.0.0.1:8000/api/studentsubject/<uuid:id>/
+
+examin the patient:
+    path('examin/<uuid:id>/', view= views.examin),#examin the patient
+    127.0.0.1:8000/api/examin/<uuid:id>/
+
+treat the patient:
+    path('treatment/<uuid:id>/', view= views.treatment),#treat the patient
+    127.0.0.1:8000/api/treatment/<uuid:id>/
+
+get student appointment:
+    path('student/appointment/', view=studentView.studentappointment)
+    127.0.0.1:8000/api/student/appointment/
+
+book next appointment:
+    path('treatment/nextappointment/<uuid:id>/', view= views.nextappointment) #book the appointment
+    127.0.0.1:8000/api/treatment/nextappointment/<uuid:id>/
+
+get the not treated teeth:
+    path('notexamined/', view=views.notexamined),
+    127.0.0.1:8000/api/notexamined/
+
+get the examined approved teeth:
+    path('examined/approved/', view=views.examinedapproved),
+    127.0.0.1:8000/api/examined/approved/
+
+
+
+
+
+
+students profiles: GET
+    127.0.0.1:8000/api/users/student/
+
+logged student profile: GET DELETE
+    127.0.0.1:8000/api/users/student/{id}/
+
+get student subjects: GET POST
+    127.0.0.1:8000/api/users/studentsubject/
+
+get one studen subject: GET DELETE
+    127.0.0.1:8000/api/users/studentsubject/{id}/
+_
+get student appointment: GET POST
+    127.0.0.1:8000/api/users/student/appointment/
+
+book next appointment: PUT
+    127.0.0.1:8000/api/record/treatment/nextappointment/{id}/
+_
+examin the patient: PUT
+    127.0.0.1:8000/api/record/examin/{id}/
+
+get the not treated teeth: GET
+    127.0.0.1:8000/api/record/treatment/nextappointment/{id}/
+_
+treat the patient: PUT
+    127.0.0.1:8000/api/record/treatment/{id}/
+
+get the examined approved teeth: GET
+    127.0.0.1:8000/api/record/examined/approved/

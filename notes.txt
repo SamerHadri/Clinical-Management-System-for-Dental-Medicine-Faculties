@@ -1,0 +1,47 @@
+
+
+
+
+
+###########################################################################
+#           Record RecordCase RecordTreatment -> look at the model the serlializer then view
+#           might add new serlializers
+###########################################################################
+#           linking student subject you don't need to send the student id
+#           a student can withdraw a subject but you need to keep a log of the action
+###########################################################################
+#           approve the examin and treatment from supervisor
+#           and change the number fo appointments 
+#           find another way to access the examin cases and the treatment treatments
+#           each case has one and only one treatment(can be solved from the get filters)
+#           make the treatment like the examination (update or create) search for the logical path then code it
+###########################################################################
+#           make the patient add himself
+#           validatior in the serializer
+#           add the term and the academic year
+#           include the term and year in the studentsubject branch
+#           change the marks to passing will update the completed hours for the student
+#           update for the user 'PUT' (Deleted for reasons beyond comprehension)
+#           django admin
+#           check the fucking time appointments object and the next appointments in the Record  (No relation between Appointments and Record)
+#           pagination (should be final)
+#           patient notes uuid how to add the notes 
+#           when adding a student make sure to connect him to the first year subjects
+check integrity of the subjects
+-           do the translations
+check on the examination and treatment then the approved versions (take in cosideration the subject error)
+    filter the records based on the case
+
+find out how to use AI django (tenserflow and openCV)
+
+
+check the update_create_get() for the examination and the treatment
+Optional:
+    seperate the app settings from the user model
+    check on delete parameter in foreign
+    DOWNLOAD AND IMPLEMENT django seeder
+
+
+
+fianl changes:
+    creating patient will require a confirmations password
